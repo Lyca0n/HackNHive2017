@@ -18,3 +18,12 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/patient/profile/create', 'PatientProfileController@create')->name('patientprofile.create');
+Route::get('/patient/profile/{index}', 'PatientProfileController@index')->name('patientprofile.index');
+Route::post('/patient/profile/store', 'PatientProfileController@store')->name('patientprofile.store');
+Route::post('/physician/profile/store', 'PhysicianProfileController@store')->name('physicianprofile.store');
+Route::get('/physician/profile/create', 'PhysicianProfileController@create')->name('physicianprofile.create');
+Route::get('/physician/profile{index}', 'PhysicianProfileController@index')->name('physicianprofile.index');
+
+//sample route
+//Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');

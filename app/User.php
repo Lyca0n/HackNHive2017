@@ -3,7 +3,8 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use App\PatientProfile;
+use App\PhysicianProfile;
 class User extends Authenticatable
 {
     /**
@@ -12,7 +13,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email', 'password',
     ];
 
     /**
@@ -23,4 +24,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function patientProfile(){
+        return $this->hasOne('App\PatientProfile');
+    }
+    
+    public function physicianProfile(){
+        return $this->hasOne('App\PhysicianProfile');
+    }
 }
