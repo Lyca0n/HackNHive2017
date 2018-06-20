@@ -44,6 +44,10 @@ class PatientProfileController extends Controller
         $profile->user_id = \Auth::user()->id;
         $profile->save();
         return redirect()->route('patientprofile.index',['index' => $profile->id]);
+        /*
+        action('PatientProfileController@index',['index' => 3]);
+        
+        */
     }  
     public function index($id){
        return view('patientprofile/index')->withProfile(PatientProfile::find($id)); 

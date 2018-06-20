@@ -26,7 +26,7 @@ class User extends Authenticatable
     ];
     
     public function patientProfile(){
-        return $this->hasOne('App\PatientProfile');
+        return $this->hasOne('App\PatientProfile','user_id');
     }
     
     public function physicianProfile(){

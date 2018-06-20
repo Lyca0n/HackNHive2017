@@ -27,7 +27,8 @@
 					<p>Tu expediente médico<br />
 					en cualquier lugar</p>
 					<ul class="actions">
-						<li><a href="#" class="button special icon fa-download">Inscríbete</a></li>
+						<li><a href="{{ url('/register') }}" class="button special icon fa-user-plus">Inscríbete</a></li>
+
 						<li><a href="#one" class="button icon fa-chevron-down scrolly">Conoce mas</a></li>
 					</ul>
 				</div>
@@ -41,7 +42,7 @@
 					tendrás a la mano tus datos médicos más importantes</h2>
 				</header>
 				<ul class="icons major">
-					<li><span class="icon fa-camera-retro"><span class="label">Shoot</span></span></li>
+					<li><span class="icon fa-medkit"><span class="label">Shoot</span></span></li>
 					<li><span class="icon fa-refresh"><span class="label">Process</span></span></li>
 					<li><span class="icon fa-cloud"><span class="label">Upload</span></span></li>
 				</ul>
@@ -54,47 +55,27 @@
 						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
 						<div class="content">
 							<h3>Confianza</h3>
-							<p>Tu información está almacenada a en servidores que cuentan con los mejores estándares de seguridad.</p>
+							<p>Tu información se almacenará en servidores que cuentan con los mejores estándares de seguridad.</p>
 						</div>
 					</section>
 					<section class="spotlight">
 						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
 						<div class="content">
 							<h3>Tranquilidad</h3>
-							<p>Un médico puede acceder a tus datos médicos sin la necesidad de que tengas la preocupación de haber olvidado comentarle algo de tu historial.</p>
+							<p>No tendrás que preocuparte de explicar todo tu historial clínico a la hora de visitar algún profesional de la salud. Ellos podrán ingresar a tu perfil el momento que tú lo requieras.</p>
 						</div>
 					</section>
 					<section class="spotlight">
 						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
 						<div class="content">
-							<h3>En todo lugar</h3>
-							<p>Al estar almacenado en la nube, tu información es accesible desde cualquier parte del mundo a cualquier hora con una disponibilidad 24/7.</p>
+							<h3>En donde sea, cuando sea</h3>
+							<p>Al estar almacenado en la nube, tendrás acceso a tu información desde cualquier parte del mundo, a cualquier hora, los 365 días del año.</p>
 						</div>
 					</section>
-					<section class="special">
-						<ul class="icons labeled">
-							<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
-							<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
-							<li><span class="icon fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
-							<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
-							<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
-						</ul>
-					</section>
+					
 				</div>
 			</section>
 
-		<!-- Three -->
-			<section id="three" class="wrapper style2 special">
-				<header class="major">
-					<h2>Magna leo sapien gravida</h2>
-					<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
-					lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.</p>
-				</header>
-				<ul class="actions">
-					<li><a href="#" class="button special icon fa-download">Download</a></li>
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
-			</section>
 
 		<!-- Four -->
 		<!--
@@ -424,7 +405,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+				<p class="copyright">&copy; MediCloud 2017</p>
 			</footer>
 
 		<!-- Scripts -->
